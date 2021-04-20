@@ -16,7 +16,7 @@ Click on the below links to view the Trello Board and Project Plan
 
 
 * Architectural Diagram
-![Application Architecture][https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/architecture.png]
+![alt text][https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/architecture.png "Architecture Diagram"]
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 

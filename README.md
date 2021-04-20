@@ -15,10 +15,11 @@ Click on the below links to view the Trello Board and Project Plan
 ## Instructions
 
 
-* Architectural Diagram
+### Architectural Diagram
+  
 ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/architecture.png "Architecture Diagram")
 
-This project uses a number of technologies as well as the following platforms to implement a CI/CD Pipeline [Azure](https://portal.azure.com), [Azure DevOps](https://dev.azure.com) and [GitHub](https://github.com), therefor the relevant accounts are required. The below steps detail the steps for implementing a CD/CD Pipeline, Configuring our Python Machine Leaarning Application and Deployment to Azure App Services:
+This project uses a number of technologies as well as the following platforms to implement a CI/CD Pipeline [Azure](https://portal.azure.com), [Azure DevOps](https://dev.azure.com) and [GitHub](https://github.com), therefore the relevant accounts are required. The below steps detail the steps for implementing a CD/CD Pipeline, Configuring our Python Machine Leaarning Application and Deployment to Azure App Services:
 
 ## Development Environment
 For our development environment we will use Azure Shell and push our code to a GitHub repository. To implement this the following steps need to be performed:

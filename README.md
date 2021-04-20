@@ -1,14 +1,16 @@
 # azure-ci-cd-pipeline
-[![Python application test with Github Actions](https://github.com/wallandall/azure-ci-cd-pipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/wallandall/azure-ci-cd-pipeline/actions/workflows/pythonapp.yml)
 # Overview
+This project demponstrates the steps on how to build a CI/CD pipeline using Azure Devops and Github to deploy a Pyhon Machine Learning Application to Azure App Services
+Technolog
 
-<TODO: complete this with an overview of your project>
+[![Python application test with Github Actions](https://github.com/wallandall/azure-ci-cd-pipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/wallandall/azure-ci-cd-pipeline/actions/workflows/pythonapp.yml)
+
 
 ## Project Plan
-<TODO: Project Plan
+Click on the below links to view the Trello Board and Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* [Trello board](https://trello.com/b/DKIrIpDZ/deploy-cicd-pipeline-in-azure)
+* [Project Plan](https://docs.google.com/spreadsheets/d/1X-_tgCsTntOpF15eZHiBT_9kV8qnpq180sBZ4QrkGVM/edit#gid=1348135932)
 
 ## Instructions
 

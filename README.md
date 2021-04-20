@@ -27,20 +27,27 @@ For our development environment we will use Azure Shell and push our code to a G
 ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloud-dev.png "Development Environment")
 
 
-1. Log into Azure Portal and access the cloud shell as per the below image
+1. Log into the Azure Portal and access the cloud shell as per the below image
 
 
    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloud-shell.png "Cloud Shell")
 
 
-2. Generate an SSH Key by running the following command from the Azure Cloud Shell : ``` ssh-keygen -t rsa ```. The passphrase blank.
+2. Generate an SSH Key by running the following command from Azure Cloud Shell : ``` ssh-keygen -t rsa ```. The passphrase blank.
 
 
    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/ssh-key-gen.png "Generate SSH Key")
 
 
-3. Once the Key has been generated run the following command from the Cloud Shell: ``` cat ~/.ssh/id_rsa.pub ```
-4. 
+3. Once the Key has been generated run the following command from the Cloud Shell: ``` cat ~/.ssh/id_rsa.pub ``` , and copy the SSH Key
+4. Navigate to [SSH and GPG key](https://github.com/settings/keys) under setting in your GitHub Account.
+5. Click on New SSH key
+   1. Add a title, eg Azure Cloud Shell
+   2. Paste the copied key under "Key"
+   3. Click on Add SSH Key
+   All SSH saved SSH Keys will be displayed as per the below image:
+   ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/all-keys.png "SSH Keys") 
+
 
 * Project running on Azure App Service
 

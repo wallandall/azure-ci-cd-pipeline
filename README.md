@@ -20,6 +20,19 @@ Click on the below links to view the Trello Board and Project Plan
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
+This project uses a number of technologies as well as the following platforms to implement a CI/CD Pipeline [Azure](https://portal.azure.com), [Azure DevOps](https://dev.azure.com) and [GitHub](https://github.com), therefor the relevant accounts are required. The below steps detail the steps for implementing a CD/CD Pipeline, Configuring our Python Machine Leaarning Application and Deployment to Azure App Services:
+
+## Development Environment
+For our development environment we will use Azure Shell and push our code to a GitHub repository. To implement this the following steps need to be performed:
+
+![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloud-dev.png "Development Environment")
+1. Log into Azure Portal and access the cloud shell as per the below image
+   ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloud-shell.png "Cloud Shell")
+2. Generate an SSH Key by running the following command from the Azure Cloud Shell : ``` ssh-keygen -t rsa ```. The passphrase blank.
+   ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/ssh-key-gen.png "Generate SSH Key")
+3. Once the Key has been generated run the following command from the Cloud Shell: ``` cat ~/.ssh/id_rsa.pub ```
+4. 
+
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell

@@ -46,8 +46,28 @@ For our development environment we will use Azure Shell and push our code to a G
    2. Paste the copied key under "Key".
    3. Click on Add SSH Key.
    
-   All SSH saved SSH Keys will be displayed as per the below image:
+   All saved SSH Keys will be displayed as per the below image:
+
    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/all-keys.png "SSH Keys") 
 
-6. Once the SSH Key has been successfuly setup, you can clone the Git Repository by running ``` git clone git@github.com:wallandall/azure-ci-cd-pipeline.git ```` from the root of the Azure Cloud Shell. This will copy all project files and if successful, the output will be similar to the below image:
-  ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloned.png "Cloned Git RepositoryI rescheduled the P")  
+6. Once the SSH Key has been successfuly setup, you can clone the Git Repository by running ``` git clone git@github.com:wallandall/azure-ci-cd-pipeline.git ``` from the root of the Azure Cloud Shell. This will copy all project files and if successful, the output will be similar to the below image:
+  ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloned.png "Cloned Git Repository")  
+
+7. Setup a Python Virtual Environment by running ``` python3 -m venv ~/.azure-ci-cd-pipeline ``` from the root of the Azure Cloud Shell
+8. Activate the Python Environment by running ``` source ~/.azure-ci-cd-pipeline/bin/activate ``` 
+9. To install dependencies and ensure the project is properly configured, navigate to the project directory and run the following commands from Azure Cloud Shell:
+   1.  ``` make all ``` , this perform the following actions:
+       1.   Installs project requirements from the requirements.txt file
+       2.   Runs pytest on test_hello.py
+       3.   Runs pylint
+    If all succesful, the below results will be displayed
+
+    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/make-all.png "Make All")  
+   2.  To create an Azure App Service and initial deployment of your application run ```az webapp up -n <your-appservice-name> -l your-location ``` 
+       1.  -n attribute is the name of your application and needs to be unique. Replace <your-appservice-name> with the name of your application, this will be included in the application URL.
+       2.  -l attribute defines the location your application will be deployed to eg: germanywestcentral . More information on az webapp commands can be found [here](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest)
+    After successfully running the above commands, you will see the below output: 
+
+    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/az-webapp-up.png "Azure App Services") 
+
+    The URL of your application will be displayed in the output and can be used to access the application

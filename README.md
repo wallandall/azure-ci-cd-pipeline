@@ -13,10 +13,10 @@ Click on the below links to view the Trello Board and Project Plan
 * [Project Plan](https://docs.google.com/spreadsheets/d/1X-_tgCsTntOpF15eZHiBT_9kV8qnpq180sBZ4QrkGVM/edit#gid=1348135932)
 
 ## Instructions
-![Application Architecture][images/architechture.png]
+
 
 * Architectural Diagram
-
+![Application Architecture][https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/architecture.png]
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 

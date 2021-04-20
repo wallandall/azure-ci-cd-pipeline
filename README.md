@@ -19,7 +19,7 @@ Click on the below links to view the Trello Board and Project Plan
   
 ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/architecture.png "Architecture Diagram")
 
-This project uses a number of technologies as well as the following platforms to implement a CI/CD Pipeline [Azure](https://portal.azure.com), [Azure DevOps](https://dev.azure.com) and [GitHub](https://github.com), therefore the relevant accounts are required. The below steps detail the steps for implementing a CD/CD Pipeline, Configuring our Python Machine Leaarning Application and Deployment to Azure App Services:
+This project uses a number of technologies as well as the following platforms to implement a CI/CD Pipeline [Azure](https://portal.azure.com), [Azure DevOps](https://dev.azure.com) and [GitHub](https://github.com), therefore the relevant accounts are required. The below steps detail the actions to implementing a CD/CD Pipeline, Configuring our Python Machine Leaarning Application and Deployment to Azure App Services:
 
 ## Development Environment
 For our development environment we will use Azure Shell and push our code to a GitHub repository. To implement this the following steps need to be performed:
@@ -33,7 +33,7 @@ For our development environment we will use Azure Shell and push our code to a G
    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloud-shell.png "Cloud Shell")
 
 
-2. Generate an SSH Key by running the following command from Azure Cloud Shell : ``` ssh-keygen -t rsa ```. The passphrase blank.
+2. Generate an SSH Key by running the following command from Azure Cloud Shell : ``` ssh-keygen -t rsa ```. Leave the passphrase blank. More information on SSH Keys can be found on [GitHub](https://docs.github.com/en/github/authenticating-to-github/about-ssh)
 
 
    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/ssh-key-gen.png "Generate SSH Key")
@@ -42,42 +42,12 @@ For our development environment we will use Azure Shell and push our code to a G
 3. Once the Key has been generated run the following command from the Cloud Shell: ``` cat ~/.ssh/id_rsa.pub ``` , and copy the SSH Key
 4. Navigate to [SSH and GPG key](https://github.com/settings/keys) under setting in your GitHub Account.
 5. Click on New SSH key
-   1. Add a title, eg Azure Cloud Shell
-   2. Paste the copied key under "Key"
-   3. Click on Add SSH Key
+   1. Add a title, eg Azure Cloud Shell.
+   2. Paste the copied key under "Key".
+   3. Click on Add SSH Key.
+   
    All SSH saved SSH Keys will be displayed as per the below image:
    ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/all-keys.png "SSH Keys") 
 
-
-* Project running on Azure App Service
-
-* Project cloned into Azure Cloud Shell
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-* Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-
-* Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
-
-## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
-
-## Demo 
-
-<TODO: Add link Screencast on YouTube>
+6. Once the SSH Key has been successfuly setup, you can clone the Git Repository by running ``` git clone git@github.com:wallandall/azure-ci-cd-pipeline.git ```` from the root of the Azure Cloud Shell. This will copy all project files and if successful, the output will be similar to the below image:
+  ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/cloned.png "Cloned Git RepositoryI rescheduled the P")  

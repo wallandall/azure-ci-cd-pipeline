@@ -73,3 +73,5 @@ For our development environment we will use Azure Shell and push our code to a G
     The URL of your application will be displayed in the output and can be used to access the application, for example:
 
     ![alt text](https://github.com/wallandall/azure-ci-cd-pipeline/blob/main/images/app-service-url.png "Running application") 
+
+    Test
